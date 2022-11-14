@@ -1,0 +1,10 @@
+{
+  "regexManagers": [
+    {
+      "fileMatch": ["^Dockerfile"],
+      "matchStrings": ["ENV CATTLE_K3S_VERSION (?<currentValue>.*?)\\n"],
+      "depNameTemplate": "k3s-io/k3s",
+      "datasourceTemplate": "github-releases"
+    }
+  ]
+}
