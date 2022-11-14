@@ -6,5 +6,11 @@
       "depNameTemplate": "k3s-io/k3s",
       "datasourceTemplate": "github-releases"
     }
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": ["k3s-io/k3s"],
+      "allowedVersions": "<=v1.25"
+    }
   ]
 }
