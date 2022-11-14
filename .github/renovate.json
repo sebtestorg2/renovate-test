@@ -9,8 +9,8 @@
   ],
   "packageRules": [
     {
-      "matchPackageNames": ["k3s-io/k3s", "rancher/k3s"],
-      "allowedVersions": "<=v1.25"
+      "matchPackagePatterns": ["k3s"],
+      "allowedVersions": "<=1.25.0"
     }
   ]
 }
