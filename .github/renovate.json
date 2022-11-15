@@ -5,12 +5,23 @@
       "matchStrings": ["ENV CATTLE_K3S_VERSION (?<currentValue>.*?)\\n"],
       "depNameTemplate": "k3s-io/k3s",
       "datasourceTemplate": "github-releases"
+    },
+    {
+      "fileMatch": ["^Dockerfile"],
+      "matchStrings": ["ENV KUSTOMIZE_VERSION (?<currentValue>.*?)\\n"],
+      "depNameTemplate": "kubernetes-sigs/kustomize",
+      "datasourceTemplate": "github-releases"
     }
+
   ],
   "packageRules": [
     {
       "matchPackagePatterns": ["k3s"],
       "allowedVersions": "<1.25.0"
+    },
+    {
+      "matchPackagePatterns": ["kustomize"],
+      "extractVersion": "^kustomize\/(?<version>.*)$"
     }
   ]
 }
