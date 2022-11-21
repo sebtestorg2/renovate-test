@@ -33,6 +33,11 @@
     {
       "matchPackagePatterns": ["kustomize"],
       "extractVersion": "^kustomize\/(?<version>.*)$"
+    },
+    {                                                                                                                                                                                                                                                                                                                         
+      "matchPackagePatterns": ["rancher/ui", "rancher/dashboard"],                                                                                                                                                                                                                                                            
+      "allowedVersions": "<2.8.0",                                                                                                                                                                                                                                                                                            
+      "groupName": "ui-dashboard-envs"                                                                                                                                                                                                                                                                                        
     }
   ]
 }
