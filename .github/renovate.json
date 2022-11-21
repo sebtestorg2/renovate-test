@@ -31,11 +31,6 @@
       "allowedVersions": "<1.25.0"
     },
     {
-      "matchPackagePatterns": ["rancher/ui", "rancher/dashboard"],
-      "allowedVersions": "<2.8.0",
-      "groupName": "ui-dashboard-envs"
-    },
-    {
       "matchPackagePatterns": ["kustomize"],
       "extractVersion": "^kustomize\/(?<version>.*)$"
     }
