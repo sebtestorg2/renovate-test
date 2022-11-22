@@ -1,4 +1,5 @@
 {
+  "repositories": ["sebtestorg2/renovate-test"],
   "regexManagers": [
     {
       "fileMatch": ["Dockerfile", "Dockerfile.dapper"],
