@@ -27,8 +27,8 @@ jobs:
         uses: renovatebot/github-action@v34.30.2
         env:
           RENOVATE_REPOSITORIES: ${{ github.repository }}
-          RENOVATE_FORCE_CLI: "true"
           LOG_LEVEL: "debug"
+          RENOVATE_SCHEDULE: "[]"
         with:
           configurationFile: .github/renovate.json
           token: "${{ secrets.RENOVATE_TOKEN }}"
