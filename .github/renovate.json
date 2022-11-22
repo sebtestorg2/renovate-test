@@ -28,6 +28,7 @@
   "packageRules": [
     {
       "matchPackagePatterns": ["k3s"],
+      "groupName": "k3s",
       "allowedVersions": "<1.25.0"
     },
     {
@@ -45,8 +46,8 @@
     }
   ],
   "schedule": [
-    "after 5am every weekday",
     "before 7am every weekday",
+    "after 5am every weekday",
     "every weekend"
   ]
 }
