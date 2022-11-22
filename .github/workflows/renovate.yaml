@@ -18,13 +18,10 @@ jobs:
 
       - name: remove schedule for ad-hoc
         run: |
-          ls -la
-          ls -la .github
           TMP_FILE=$(mktemp)
+          chmod =rw $TMP_FILE
           jq 'del(.schedule)' .github/renovate.json > $TMP_FILE
           mv $TMP_FILE .github/renovate.json
-          ls -la
-          ls -la .github
 
       - name: Self-hosted Renovate
         uses: renovatebot/github-action@v34.30.2
