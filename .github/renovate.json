@@ -43,5 +43,10 @@
       "allowedVersions": "<2.8.0",                                                                                                                                                                                                                                                                                            
       "groupName": "ui-dashboard-envs"                                                                                                                                                                                                                                                                                        
     }
+  ],
+  "schedule": [
+    "after 5am every weekday",
+    "before 7am every weekday",
+    "every weekend"
   ]
 }
