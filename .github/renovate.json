@@ -46,8 +46,7 @@
     }
   ],
   "schedule": [
-    "before 7am every weekday",
-    "after 5am every weekday",
+    "every weekday after 5am and before 7am",
     "every weekend"
   ]
 }
