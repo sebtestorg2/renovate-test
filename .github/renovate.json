@@ -36,6 +36,7 @@
     {
       "matchPackagePatterns": ["kustomize"],
       "extractVersion": "^kustomize\/(?<version>.*)$"
+      "groupName": "kustomize"
     },
     {
       "matchPackagePatterns": ["rancher/ui"],
