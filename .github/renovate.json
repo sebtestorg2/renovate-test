@@ -1,4 +1,6 @@
 {
+  "additionalBranchPrefix": "{{parentDir}}-",
+  "labels": ["dependencies"],
   "regexManagers": [
     {
       "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile[^/]*$"],
