@@ -35,7 +35,7 @@
     },
     {
       "matchPackagePatterns": ["kustomize"],
-      "extractVersion": "^kustomize\/(?<version>.*)$"
+      "extractVersion": "^kustomize\/(?<version>.*)$",
       "groupName": "kustomize"
     },
     {
