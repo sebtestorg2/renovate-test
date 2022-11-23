@@ -1,5 +1,4 @@
 {
-  "additionalBranchPrefix": "{{parentDir}}-",
   "labels": ["dependencies"],
   "regexManagers": [
     {
