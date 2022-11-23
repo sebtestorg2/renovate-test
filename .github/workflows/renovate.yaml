@@ -31,7 +31,7 @@ jobs:
           RENOVATE_REQUIRE_CONFIG: "ignored"
           RENOVATE_USERNAME: "renovate-action[bot]"
           RENOVATE_GIT_AUTHOR: "Renovate Action <118825710+renovate-action[bot]@users.noreply.github.com>"
-          RENOVATE_GIT_PRIVATE_KEY: ${{ secrets.GPG_KEY }}
+          RENOVATE_PLATFORM_COMMIT: "true"
           LOG_LEVEL: "debug"
         with:
           configurationFile: .github/renovate.json
