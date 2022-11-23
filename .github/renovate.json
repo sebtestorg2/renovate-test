@@ -1,4 +1,5 @@
 {
+  "baseBranches": ["main", "release/v9.9"],                                                                                                                                                                                                                                                                                   
   "labels": ["dependencies"],
   "regexManagers": [
     {
