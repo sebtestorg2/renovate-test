@@ -58,6 +58,9 @@
       "automerge": false
     }
   ],
+  "prBodyDefinitions": {
+    "Manager": "`{{{manager}}}`"
+  },
   "prBodyColumns": [
     "Package",
     "Manager",
