@@ -53,9 +53,9 @@
       "automerge": true
     },
     {                                                                                                                                                                                                                                                                                                                         
-      "depType": "action",
+      "matchManagers": ["github-actions"],
       "matchUpdateTypes": ["minor", "patch"],
-      "automerge": false
+      "automerge": true
     }
   ],
   "prBodyDefinitions": {
