@@ -51,6 +51,11 @@
       "matchPackagePatterns": ["registry.suse.com/bci/bci-base"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true
+    },
+    {                                                                                                                                                                                                                                                                                                                         
+      "depType": "action",
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
     }
   ]
 }
