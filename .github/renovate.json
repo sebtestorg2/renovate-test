@@ -6,24 +6,28 @@
       "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile[^/]*$"],
       "matchStrings": ["ENV CATTLE_K3S_VERSION (?<currentValue>.*?)\\n"],
       "depNameTemplate": "k3s-io/k3s",
+      "depType": "env-k3s-versions",
       "datasourceTemplate": "github-releases"
     },
     {
       "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile[^/]*$"],
       "matchStrings": ["ENV KUSTOMIZE_VERSION (?<currentValue>.*?)\\n"],
       "depNameTemplate": "kubernetes-sigs/kustomize",
+      "depType": "env-kustomize-versions",
       "datasourceTemplate": "github-releases"
     },
     {
       "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile[^/]*$"],
       "matchStrings": ["ENV CATTLE_UI_VERSION (?<currentValue>.*?)\\n"],
       "depNameTemplate": "rancher/ui",
+      "depType": "env-ui-versions",
       "datasourceTemplate": "github-releases"
     },
     {
       "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile[^/]*$"],
       "matchStrings": ["ENV CATTLE_DASHBOARD_UI_VERSION (?<currentValue>.*?)\\n"],
       "depNameTemplate": "rancher/dashboard",
+      "depType": "env-ui-versions",
       "datasourceTemplate": "github-releases"
     }
   ],
