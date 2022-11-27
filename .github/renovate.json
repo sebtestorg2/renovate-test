@@ -17,6 +17,24 @@
     },
     {
       "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile[^/]*$"],
+      "matchStrings": ["ENV CATTLE_MACHINE_VERSION (?<currentValue>.*?)\\n"],
+      "depNameTemplate": "rancher/machine",
+      "datasourceTemplate": "github-releases"
+    },
+    {
+      "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile[^/]*$"],
+      "matchStrings": ["ENV HELM_VERSION (?<currentValue>.*?)\\n"],
+      "depNameTemplate": "helm/helm",
+      "datasourceTemplate": "github-releases"
+    },
+    {
+      "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile[^/]*$"],
+      "matchStrings": ["ENV CATTLE_CLI_VERSION (?<currentValue>.*?)\\n"],
+      "depNameTemplate": "rancher/cli",
+      "datasourceTemplate": "github-releases"
+    },
+    {
+      "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile[^/]*$"],
       "matchStrings": ["ENV CATTLE_UI_VERSION (?<currentValue>.*?)\\n"],
       "depNameTemplate": "rancher/ui",
       "datasourceTemplate": "github-releases"
