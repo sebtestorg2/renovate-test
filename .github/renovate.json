@@ -2,6 +2,18 @@
   "baseBranches": ["main", "release/v9.9"],                                                                                                                                                                                                                                                                                   
   "rebaseWhen": "conflicted",
   "labels": ["dependencies"],
+  "prBodyDefinitions": {
+    "Manager": "`{{{manager}}}`"
+  },
+  "prBodyColumns": [
+    "Package",
+    "Manager",
+    "Type",
+    "Update",
+    "Change",
+    "Pending"
+  ],
+  "prHourlyLimit": 2,
   "regexManagers": [
     {
       "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile[^/]*$"],
@@ -76,16 +88,5 @@
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
     }
-  ],
-  "prBodyDefinitions": {
-    "Manager": "`{{{manager}}}`"
-  },
-  "prBodyColumns": [
-    "Package",
-    "Manager",
-    "Type",
-    "Update",
-    "Change",
-    "Pending"
   ]
 }
