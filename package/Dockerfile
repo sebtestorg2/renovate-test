@@ -1,4 +1,4 @@
-FROM registry.suse.com/bci/bci-base:15.4.27.14.20
+FROM registry.suse.com/bci/bci-base:15.4.27.14.21
 
 RUN zypper -n install git-core curl ca-certificates unzip xz gzip sed tar shadow gawk vim netcat-openbsd mkisofs && \
     zypper -n clean -a && rm -rf /tmp/* /var/tmp/* /usr/share/doc/packages/* && \
