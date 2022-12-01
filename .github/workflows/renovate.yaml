@@ -8,6 +8,8 @@ jobs:
   renovate:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
       - name: Validate Renovate JSON
         run: jq type .github/renovate.json
       - name: Get token
@@ -17,10 +19,6 @@ jobs:
           app_id: ${{ secrets.APP_ID }}
           installation_id: ${{ secrets.INSTALL_ID }}
           private_key: ${{ secrets.PRIVATE_KEY }}
-
-      - name: Checkout
-        uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
-
       - name: Self-hosted Renovate
         uses: renovatebot/github-action@62ebb721a0fd851df135c1488d7b4064d56a4f19
         env:
