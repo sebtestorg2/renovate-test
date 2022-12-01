@@ -2,17 +2,6 @@
   "baseBranches": ["main", "release/v9.9"],                                                                                                                                                                                                                                                                                   
   "rebaseWhen": "conflicted",
   "labels": ["dependencies"],
-  "prBodyDefinitions": {
-    "Manager": "`{{{manager}}}`"
-  },
-  "prBodyColumns": [
-    "Package",
-    "Manager",
-    "Type",
-    "Update",
-    "Change",
-    "Pending"
-  ],
   "prHourlyLimit": 2,
   "regexManagers": [
     {
@@ -86,6 +75,7 @@
     {                                                                                                                                                                                                                                                                                                                         
       "matchManagers": ["github-actions"],
       "matchUpdateTypes": ["minor", "patch"],
+      "stabilityDays": 3,
       "automerge": true,
       "pinDigests": true
     }

@@ -22,11 +22,15 @@ jobs:
       - name: Self-hosted Renovate
         uses: renovatebot/github-action@708343d5c41dfd577133569d3153b3e089bac520 # tag=v34.41.1
         env:
+          # Repository taken from variable to keep configuration file generic
           RENOVATE_REPOSITORIES: ${{ github.repository }}
+          # Onboarding not needed for self hosted
           RENOVATE_ONBOARDING: "false"
-          RENOVATE_REQUIRE_CONFIG: "ignored"
+          # Username for GitHub authentication (should match GitHub App name + [bot])
           RENOVATE_USERNAME: "renovate-action[bot]"
+          # Git commit author used, must match GitHub App
           RENOVATE_GIT_AUTHOR: "Renovate Action <118825710+renovate-action[bot]@users.noreply.github.com>"
+          # Use GitHub API to create commits (this allows for signed commits from GitHub App)
           RENOVATE_PLATFORM_COMMIT: "true"
           #LOG_LEVEL: "debug"
         with:
