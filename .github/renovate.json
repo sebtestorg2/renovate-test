@@ -86,7 +86,8 @@
     {                                                                                                                                                                                                                                                                                                                         
       "matchManagers": ["github-actions"],
       "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true
+      "automerge": true,
+      "pinDigests": true
     }
   ]
 }
