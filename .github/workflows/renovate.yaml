@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8
 
       - name: Self-hosted Renovate
-        uses: renovatebot/github-action@dadce2fda5b23762a9f49d5a23b39a70b60ea8c9
+        uses: renovatebot/github-action@62ebb721a0fd851df135c1488d7b4064d56a4f19
         env:
           RENOVATE_REPOSITORIES: ${{ github.repository }}
           RENOVATE_ONBOARDING: "false"
