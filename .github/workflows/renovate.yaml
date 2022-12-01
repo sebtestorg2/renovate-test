@@ -14,7 +14,7 @@ jobs:
         run: jq type .github/renovate.json
       - name: Get token
         id: get_token
-        uses: tibdex/github-app-token@021a2405c7f990db57f5eae5397423dcc554159c
+        uses: tibdex/github-app-token@da40f50387c080df631aba01ea5c6df3857145b7
         with:
           app_id: ${{ secrets.APP_ID }}
           installation_id: ${{ secrets.INSTALL_ID }}
