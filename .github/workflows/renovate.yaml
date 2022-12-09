@@ -1,4 +1,5 @@
 name: Renovate
+concurrency: renovate
 on:
   workflow_dispatch:
   schedule:
