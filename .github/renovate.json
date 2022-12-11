@@ -4,7 +4,6 @@
   "labels": ["dependencies"],
   "prHourlyLimit": 2,
   "automergeStrategy": "merge-commit",
-  "prCreation": "not-pending",
   "regexManagers": [
     {
       "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile[^/]*$"],
