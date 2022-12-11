@@ -72,8 +72,7 @@
       "matchPackagePatterns": ["registry.suse.com/bci/bci-base"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "stabilityDays": 3,
-      "automerge": true,
-      "pinDigests": true
+      "automerge": true
     },
     {                                                                                                                                                                                                                                                                                                                         
       "matchManagers": ["github-actions"],
