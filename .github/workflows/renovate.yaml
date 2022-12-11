@@ -38,7 +38,7 @@ jobs:
           RENOVATE_GIT_AUTHOR: "Renovate Action <118825710+renovate-action[bot]@users.noreply.github.com>"
           # Use GitHub API to create commits (this allows for signed commits from GitHub App)
           RENOVATE_PLATFORM_COMMIT: "true"
-          LOG_LEVEL: ${{ $inputs.logLevel || 'info' }}
+          LOG_LEVEL: ${{ inputs.logLevel || 'info' }}
         with:
           configurationFile: .github/renovate.json
           token: '${{ steps.get_token.outputs.token }}'
