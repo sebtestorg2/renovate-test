@@ -1,5 +1,5 @@
 {
-  "baseBranches": ["main", "release/v9.9"],                                                                                                                                                                                                                                                                                   
+  "baseBranches": ["main", "release/v9.9"],
   "rebaseWhen": "conflicted",
   "labels": ["dependencies"],
   "prHourlyLimit": 2,
@@ -63,18 +63,32 @@
       "matchPackagePatterns": ["rancher/ui"],
       "extractVersion": "v(?<version>.*)$"
     },
-    {                                                                                                                                                                                                                                                                                                                         
-      "matchPackagePatterns": ["rancher/ui", "rancher/dashboard"],                                                                                                                                                                                                                                                            
-      "allowedVersions": "<2.8.0",                                                                                                                                                                                                                                                                                            
-      "groupName": "ui-dashboard-envs"                                                                                                                                                                                                                                                                                        
+    {
+      "matchPackagePatterns": ["rancher/ui", "rancher/dashboard"],
+      "allowedVersions": "<2.8.0",
+      "groupName": "ui-dashboard-envs"
     },
-    {                                                                                                                                                                                                                                                                                                                         
+    {
       "matchPackagePatterns": ["registry.suse.com/bci/bci-base"],
       "matchUpdateTypes": ["patch", "pin", "digest"],
       "automerge": true,
       "schedule": ["every weekend after 7am"]
     },
-    {                                                                                                                                                                                                                                                                                                                         
+    {
+      "matchPackagePatterns": ["rancher/dapper"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "allowedVersions": "<1.0.0",
+      "automerge": true,
+      "schedule": ["every weekend after 4am"]
+    },
+    {
+      "matchManagers": ["droneci"],
+      "matchPackagePatterns": ["plugins/"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true,
+      "schedule": ["every weekend after 4am"]
+    },
+    {
       "matchManagers": ["github-actions"],
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true,
