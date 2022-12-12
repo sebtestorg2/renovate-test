@@ -71,24 +71,28 @@
       "matchManagers": ["dockerfile"],
       "matchPackagePatterns": ["registry.suse.com/"],
       "matchUpdateTypes": ["patch", "pin", "digest"],
-      "automerge": true
+      "automerge": true,
+      "schedule": ["every weekend after 4am"]
     },
     {
       "matchPackagePatterns": ["rancher/dapper"],
       "allowedVersions": "<1.0.0",
-      "automerge": true
+      "automerge": true,
+      "schedule": ["every weekend after 4am"]
     },
     {
       "matchManagers": ["droneci"],
       "matchPackagePatterns": ["plugins/"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
+      "automerge": true,
+      "schedule": ["every weekend after 4am"]
     },
     {
       "matchManagers": ["github-actions"],
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true,
-      "pinDigests": true
+      "pinDigests": true,
+      "schedule": ["every weekend after 4am"]
     }
   ]
 }
