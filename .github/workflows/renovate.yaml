@@ -7,6 +7,11 @@ on:
         description: "Override default log level"
         required: false
         default: "info"
+      overrideSchedule:
+        description: "Remove schedules in configuration"
+        required: false
+        default: false
+        type: boolean
   schedule:
     - cron: '30 4 * * *'
     - cron: '30 6 * * *'
@@ -25,6 +30,13 @@ jobs:
           app_id: ${{ secrets.APP_ID }}
           installation_id: ${{ secrets.INSTALL_ID }}
           private_key: ${{ secrets.PRIVATE_KEY }}
+      - name: Override schedule
+        if: ${{ github.event.inputs.overrideSchedule }}
+        run: |
+          TMP_FILE=$(mktemp)
+          chmod =rw $TMP_FILE
+          jq 'del(.packageRules[].schedule,.schedule)' .github/renovate.json > $TMP_FILE
+          mv $TMP_FILE .github/renovate.json
       - name: Self-hosted Renovate
         uses: renovatebot/github-action@8bc2d8057f49655950abaf9af6c098315c24047c # v34.54.1
         env:
