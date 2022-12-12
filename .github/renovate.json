@@ -2,7 +2,6 @@
   "baseBranches": ["main", "release/v9.9"],
   "rebaseWhen": "conflicted",
   "labels": ["dependencies"],
-  "prHourlyLimit": 2,
   "automergeStrategy": "merge-commit",
   "regexManagers": [
     {
