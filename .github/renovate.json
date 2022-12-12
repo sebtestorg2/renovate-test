@@ -69,7 +69,7 @@
       "groupName": "ui-dashboard-envs"
     },
     {
-      "matchManagers": ["docker"],
+      "matchManagers": ["dockerfile"],
       "matchPackagePatterns": ["registry.suse.com/"],
       "matchUpdateTypes": ["patch", "pin", "digest"],
       "automerge": true,
