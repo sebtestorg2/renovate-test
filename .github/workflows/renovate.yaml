@@ -8,7 +8,7 @@ on:
         required: false
         default: "info"
       overrideSchedule:
-        description: "Remove schedules in configuration"
+        description: "Override all schedules"
         required: false
         default: false
         type: boolean
@@ -31,7 +31,7 @@ jobs:
           installation_id: ${{ secrets.INSTALL_ID }}
           private_key: ${{ secrets.PRIVATE_KEY }}
       - name: Override schedule
-        if: ${{ github.event.inputs.overrideSchedule }}
+        if: ${{ github.event.inputs.overrideSchedule == 'true' }}
         run: |
           TMP_FILE=$(mktemp)
           chmod =rw $TMP_FILE
