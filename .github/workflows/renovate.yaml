@@ -35,7 +35,7 @@ jobs:
         run: |
           TMP_FILE=$(mktemp)
           chmod =rw $TMP_FILE
-          jq 'del(.packageRules[].schedule,.schedule)' .github/renovate.json > $TMP_FILE
+          jq 'del(.. | .schedule?)' .github/renovate.json > $TMP_FILE
           mv $TMP_FILE .github/renovate.json
       - name: Self-hosted Renovate
         uses: renovatebot/github-action@a9158b09431ff8fbbf824e26fefc13efc447e568 # v34.55.0
