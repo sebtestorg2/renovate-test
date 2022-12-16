@@ -1,4 +1,4 @@
 {
-  "extends": ["github>sebtestorg2/renovate-config"],
+  "extends": ["github>sebtestorg2/renovate-config#main"],
   "baseBranches": ["main", "release/v9.9"]
 }
