@@ -6,3 +6,4 @@ on:
 jobs:
   call-workflow:
     uses: sebtestorg2/renovate-config/.github/workflows/renovate.yaml@develop
+    secrets: inherit
