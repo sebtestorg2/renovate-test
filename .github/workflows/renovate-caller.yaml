@@ -5,4 +5,4 @@ on:
 
 jobs:
   call-workflow:
-    uses: sebtestorg2/renovate-config/.github/workflows/renovate.yml@develop
+    uses: sebtestorg2/renovate-config/.github/workflows/renovate.yaml@develop
