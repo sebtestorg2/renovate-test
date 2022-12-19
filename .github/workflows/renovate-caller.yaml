@@ -1,0 +1,8 @@
+name: Call a reusable workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-workflow:
+    uses: sebtestorg2/renovate-config/.github/workflows/renovate.yml@develop
