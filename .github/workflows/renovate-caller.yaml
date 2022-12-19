@@ -20,6 +20,6 @@ jobs:
   call-workflow:
     uses: sebtestorg2/renovate-config/.github/workflows/renovate.yaml@develop
     with:
-      logLevel: ${{ inputs.logLevel }}
-      overrideSchedule: ${{ inputs.overrideSchedule }}
+      logLevel: ${{ inputs.logLevel || 'info' }}
+      overrideSchedule: ${{ github.event.inputs.overrideSchedule == 'true' && '{''schedule'':null}' || '' }}
     secrets: inherit
