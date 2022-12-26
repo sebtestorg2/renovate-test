@@ -14,7 +14,7 @@ upstreamImage:
     pullPolicy: "IfNotPresent"
 upstreamImageDigest:
   image:
-    repository: "rancher/mirrored-bci-micro"
+    repository: "registry.suse.com/bci/bci-micro"
     tag: 15.4.16.1@sha256:8afce526cc29f187234cf4369c92168c4a776b6ff3a9d145d0fb0000c97238aa
     # Override imagePullPolicy image
     # options: Always, Never, IfNotPresent
