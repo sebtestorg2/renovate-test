@@ -1,4 +1,4 @@
-name: Renovate
+name: oldstaticRenovate
 concurrency: renovate   
 on:
   workflow_dispatch:
