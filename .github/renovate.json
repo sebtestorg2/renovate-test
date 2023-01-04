@@ -15,7 +15,7 @@
   "packageRules": [
     {
       "matchPackagePatterns": ["rancher/mirrored-cloud-provider-vsphere-cpi-release-manager"],
-      "matchCurrentVersion": "~1.24.0",
+      "matchCurrentVersion": "^v1.24",
       "allowedVersions": ">1.24.0 <1.25.0"
     }
   ]
