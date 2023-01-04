@@ -8,41 +8,41 @@ versionOverrides:
     values:
       cloudControllerManager:
         repository: rancher/mirrored-cloud-provider-vsphere-cpi-release-manager
-        tag: v1.24.3
+        tag: v1.25.0
   - constraint: ">= 1.23 < 1.24"
     values:
       cloudControllerManager:
         repository: rancher/mirrored-cloud-provider-vsphere-cpi-release-manager
-        tag: v1.23.3
+        tag: v1.25.0
   - constraint: "~ 1.22"
     values:
       cloudControllerManager:
         repository: rancher/mirrored-cloud-provider-vsphere-cpi-release-manager
-        tag: v1.22.7
+        tag: v1.25.0
   - constraint: "~ 1.21"
     values:
       cloudControllerManager:
         repository: rancher/mirrored-cloud-provider-vsphere-cpi-release-manager
-        tag: v1.21.3
+        tag: v1.25.0
   - constraint: "~ 1.20"
     values:
       cloudControllerManager:
         repository: rancher/mirrored-cloud-provider-vsphere-cpi-release-manager
-        tag: v1.20.1
+        tag: v1.25.0
   - constraint: "~ 1.19"
     values:
       cloudControllerManager:
         repository: rancher/mirrored-cloud-provider-vsphere-cpi-release-manager
-        tag: v1.19.0
+        tag: v1.25.0
   - constraint: "~ 1.18"
     values:
       cloudControllerManager:
         repository: rancher/mirrored-cloud-provider-vsphere-cpi-release-manager
-        tag: v1.18.0
+        tag: v1.25.0
 
 cloudControllerManager:
   repository: rancher/mirrored-cloud-provider-vsphere-cpi-release-manager
-  tag: v1.22.7
+  tag: v1.25.0
   nodeSelector: {}
   tolerations: []
   rbac:
