@@ -18,7 +18,7 @@ versionOverrides:
     values:
       cloudControllerManager:
         repository: rancher/mirrored-cloud-provider-vsphere-cpi-release-manager
-        tag: v1.22.6
+        tag: v1.22.7
   - constraint: "~ 1.21"
     values:
       cloudControllerManager:
@@ -42,7 +42,7 @@ versionOverrides:
 
 cloudControllerManager:
   repository: rancher/mirrored-cloud-provider-vsphere-cpi-release-manager
-  tag: v1.22.3
+  tag: v1.22.7
   nodeSelector: {}
   tolerations: []
   rbac:
