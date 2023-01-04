@@ -15,6 +15,7 @@
   "packageRules": [
     {
       "matchDepNames": ["rancher/mirrored-cloud-provider-vsphere-cpi-release-manager"],
+      "groupName": "mirrored-cloud-provider-vsphere-cpi-release-manager",
       "separateMinorPatch": true
     },
     {
