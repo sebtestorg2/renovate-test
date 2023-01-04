@@ -15,7 +15,7 @@
   "packageRules": [
     {
       "matchManagers": ["helm-values"],
-      "matchPackagePatterns": ["rancher/mirrored-cloud-provider-vsphere-cpi-release-manager"],
+      "matchDepNames": ["rancher/mirrored-cloud-provider-vsphere-cpi-release-manager"],
       "matchCurrentValue": "/^v1\\.24/",
       "allowedVersions": ">1.24.0 <1.25.0",
       "separateMinorPatch": true
