@@ -1,7 +1,6 @@
 {
   "extends": ["github>sebtestorg2/renovate-config#develop"],
   "baseBranches": ["main", "release/v9.9"],
-  "separateMinorPatch": true,
   "regexManagers": [
     {
       "fileMatch": [
