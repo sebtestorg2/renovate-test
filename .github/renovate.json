@@ -18,6 +18,42 @@
       "matchCurrentValue": "/^v1\\.24/",
       "allowedVersions": ">1.24.0 <1.25.0",
       "separateMinorPatch": true
+    },
+    {
+      "matchDepNames": ["rancher/mirrored-cloud-provider-vsphere-cpi-release-manager"],
+      "matchCurrentValue": "/^v1\\.23/",
+      "allowedVersions": ">1.23.0 <1.24.0",
+      "separateMinorPatch": true
+    },
+    {
+      "matchDepNames": ["rancher/mirrored-cloud-provider-vsphere-cpi-release-manager"],
+      "matchCurrentValue": "/^v1\\.22/",
+      "allowedVersions": ">1.22.0 <1.23.0",
+      "separateMinorPatch": true
+    },
+    {
+      "matchDepNames": ["rancher/mirrored-cloud-provider-vsphere-cpi-release-manager"],
+      "matchCurrentValue": "/^v1\\.21/",
+      "allowedVersions": ">1.21.0 <1.22.0",
+      "separateMinorPatch": true
+    },
+    {
+      "matchDepNames": ["rancher/mirrored-cloud-provider-vsphere-cpi-release-manager"],
+      "matchCurrentValue": "/^v1\\.20/",
+      "allowedVersions": ">1.20.0 <1.21.0",
+      "separateMinorPatch": true
+    },
+    {
+      "matchDepNames": ["rancher/mirrored-cloud-provider-vsphere-cpi-release-manager"],
+      "matchCurrentValue": "/^v1\\.19/",
+      "allowedVersions": ">1.19.0 <1.20.0",
+      "separateMinorPatch": true
+    },
+    {
+      "matchDepNames": ["rancher/mirrored-cloud-provider-vsphere-cpi-release-manager"],
+      "matchCurrentValue": "/^v1\\.18/",
+      "allowedVersions": ">1.18.0 <1.19.0",
+      "separateMinorPatch": true
     }
   ]
 }
