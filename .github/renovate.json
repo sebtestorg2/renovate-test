@@ -1,6 +1,7 @@
 {
   "extends": ["github>sebtestorg2/renovate-config#develop"],
   "baseBranches": ["main", "release/v9.9"],
+  "separateMinorPatch": true,
   "regexManagers": [
     {
       "fileMatch": [
@@ -16,7 +17,6 @@
     {
       "matchPackagePatterns": ["rancher/mirrored-cloud-provider-vsphere-cpi-release-manager"],
       "matchCurrentVersion": ">1.24.0 <1.25.0",
-      "matchUpdateTypes": ["patch"],
       "allowedVersions": ">1.24.0 <1.25.0"
     }
   ]
