@@ -1,6 +1,14 @@
 {
   "extends": ["github>sebtestorg2/renovate-config#develop"],
   "baseBranches": ["main", "release/v9.9"],
+  "prBodyColumns": [
+    "Package",
+    "Update",
+    "Type",
+    "New value",
+    "Package file",
+    "References"
+  ],
   "regexManagers": [
     {
       "fileMatch": [
