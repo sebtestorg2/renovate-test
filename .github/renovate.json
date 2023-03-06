@@ -7,6 +7,7 @@
     "Type",
     "New value",
     "Package file",
+    "Package manager",
     "References"
   ],
   "regexManagers": [
@@ -31,6 +32,10 @@
       "matchDepNames": ["rancher/mirrored-cloud-provider-vsphere-cpi-release-manager"],
       "matchUpdateTypes": ["major", "minor"],
       "enabled": false
+    },
+    {
+      "matchPackagePatterns": ["registry.suse.com/"],
+      "allowedVersions": "<15.5.0"
     }
   ]
 }
