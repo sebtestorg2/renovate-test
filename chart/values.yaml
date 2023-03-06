@@ -8,14 +8,14 @@ mirroredImage:
 upstreamImage:
   image:
     repository: "registry.suse.com/bci/bci-micro"
-    tag: 15.4.17.1
+    tag: 15.5.3.8
     # Override imagePullPolicy image
     # options: Always, Never, IfNotPresent
     pullPolicy: "IfNotPresent"
 upstreamImageDigest:
   image:
     repository: "registry.suse.com/bci/bci-micro"
-    tag: 15.4.17.1@sha256:5547c0f4f63e69b1f9b047afc7f1399c2114965f5f7a1cdf7051561cefc0c5c6
+    tag: 15.5.3.8@sha256:f8e94bea1580b41dd7dd2577f702136a7407ce0f91aba5a493f43a6e16e61c6c
     # Override imagePullPolicy image
     # options: Always, Never, IfNotPresent
     pullPolicy: "IfNotPresent"    
