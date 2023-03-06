@@ -34,7 +34,7 @@
       "enabled": false
     },
     {
-      "matchPackagePatterns": ["registry.suse.com/"],
+      "matchPackagePatterns": ["registry.suse.com/bci/bci"],
       "allowedVersions": "<15.5.0"
     }
   ]
