@@ -15,6 +15,19 @@ steps:
   - name: docker
     path: /var/run/docker.sock
 
+- name: download-trivy
+  image: registry.suse.com/bci/python:3.10
+  environments:
+    TRIVY_VERSION: "v0.38.2"
+  commands:
+  - zypper install -y tar gzip
+  - curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b $(pwd) $TRIVY_VERSION
+  when:
+    event:
+    - cron
+    - custom
+    - pull_request
+
 - name: fossa
   image: registry.suse.com/suse/sle15:15.4
   failure: ignore
