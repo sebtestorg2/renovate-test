@@ -39,8 +39,8 @@
     },
     {
       "fileMatch": ["Dockerfile"],
-      "matchStrings": ["RUN git -C / clone --branch (?<currentValue>.*?) --depth=1 https://github.com/rancher/helm\\n"],
-      "depNameTemplate": "rancher-helm",
+      "matchStrings": ["RUN git -C / clone --branch (?<currentDigest>.*?) --depth=1 https://github.com/rancher/helm\\n"],
+      "depNameTemplate": "rancher/helm",
       "packageNameTemplate": "https://github.com/rancher/helm",
       "datasourceTemplate": "git-refs"
     }
