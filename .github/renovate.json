@@ -59,6 +59,10 @@
     {
       "matchPackagePatterns": ["registry.suse.com/bci/bci"],
       "allowedVersions": "<15.5.0"
+    },
+    {
+      "matchPackagePatterns": ["rancher/helm"],
+      "extractVersion": "^release-(?<version>.*)$"
     }
   ]
 }
