@@ -167,6 +167,9 @@ RUN curl -sLf ${!TINI_URL} > /usr/bin/tini && \
     chmod +x /usr/bin/tini /usr/bin/telemetry && \
     mkdir -p /var/lib/rancher-data/driver-metadata
 
+ENV YQ_VERSION=v4.30.8
+RUN wget https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_${ARCH} -O /usr/bin/yq && chmod +x /usr/bin/yq;
+
 # Versions for UI, DASHBOARD and CLI will be the same as 2.6 until new releases are made to these
 ENV CATTLE_UI_VERSION 2.7.0
 ENV CATTLE_DASHBOARD_UI_VERSION v2.7.0
