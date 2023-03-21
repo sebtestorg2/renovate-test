@@ -26,6 +26,17 @@
       "depNameTemplate": "rancher/helm",
       "packageNameTemplate": "https://github.com/rancher/helm",
       "datasourceTemplate": "git-refs"
+    },
+    {
+      "fileMatch": [
+        "(^|/|\\.)Dockerfile$",
+        "(^|/)Dockerfile[^/]*$"
+      ],
+      "matchStrings": [
+        "ENV YQ_VERSION(\\=|\\s)(?<currentValue>.*?)\\n"
+      ],
+      "depNameTemplate": "mikefarah/yq",
+      "datasourceTemplate": "github-releases"
     }
   ],
   "packageRules": [
