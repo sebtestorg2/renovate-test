@@ -21,7 +21,10 @@
       "datasourceTemplate": "docker"
     },
     {
-      "fileMatch": ["Dockerfile"],
+      "fileMatch": [
+        "(^|/|\\.)Dockerfile$",
+        "(^|/)Dockerfile[^/]*$"
+      ],
       "matchStrings": ["RUN git -C / clone --branch (?<currentValue>.*?) --depth=1 https://github.com/rancher/helm\\n"],
       "depNameTemplate": "rancher/helm",
       "packageNameTemplate": "https://github.com/rancher/helm",
