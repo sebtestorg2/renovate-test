@@ -43,6 +43,6 @@
     {
       "matchPackagePatterns": ["registry.suse.com/bci/bci"],
       "allowedVersions": "<15.5.0"
-    },
+    }
   ]
 }
