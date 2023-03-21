@@ -1,6 +1,8 @@
 {
   "extends": ["github>sebtestorg2/renovate-config#develop"],
   "baseBranches": ["main", "release/v9.9"],
+  "prConcurrentLimit": 0,
+  "prHourlyLimit": 0,
   "prBodyColumns": [
     "Package",
     "Update",
