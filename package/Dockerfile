@@ -3,7 +3,7 @@ RUN zypper -n install git
 RUN git -C / clone --branch release-v3.9.0 --depth=1 https://github.com/rancher/helm
 RUN make -C /helm
 
-FROM registry.suse.com/bci/bci-base:15.4.27.14.38
+FROM registry.suse.com/bci/bci-base:15.4.27.14.42
 
 RUN zypper -n install git-core curl ca-certificates unzip xz gzip sed tar shadow gawk vim netcat-openbsd mkisofs && \
     zypper -n clean -a && rm -rf /tmp/* /var/tmp/* /usr/share/doc/packages/* && \
