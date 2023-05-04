@@ -16,7 +16,7 @@ steps:
     path: /var/run/docker.sock
 
 - name: download-trivy
-  image: registry.suse.com/bci/python:3.10
+  image: registry.suse.com/bci/python:3.11
   environments:
     TRIVY_VERSION: "v0.38.2"
   commands:
