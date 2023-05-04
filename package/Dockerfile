@@ -171,8 +171,8 @@ ENV YQ_VERSION=v4.33.3
 RUN wget https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_${ARCH} -O /usr/bin/yq && chmod +x /usr/bin/yq;
 
 # Versions for UI, DASHBOARD and CLI will be the same as 2.6 until new releases are made to these
-ENV CATTLE_UI_VERSION 2.7.0
-ENV CATTLE_DASHBOARD_UI_VERSION v2.7.0
+ENV CATTLE_UI_VERSION 2.7.4-rc1
+ENV CATTLE_DASHBOARD_UI_VERSION v2.7.4-rc1
 ENV CATTLE_CLI_VERSION v2.7.0
 
 # Base UI brand used as a fallback env setting (not user facing) to indicate this is a non-prime install
