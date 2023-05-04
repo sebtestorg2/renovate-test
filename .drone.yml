@@ -18,7 +18,7 @@ steps:
 - name: download-trivy
   image: registry.suse.com/bci/python:3.10
   environments:
-    TRIVY_VERSION: "v0.38.2"
+    TRIVY_VERSION: "v0.41.0"
   commands:
   - zypper install -y tar gzip
   - curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b $(pwd) $TRIVY_VERSION
