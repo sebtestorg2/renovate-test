@@ -29,7 +29,7 @@ steps:
     - pull_request
 
 - name: fossa
-  image: registry.suse.com/suse/sle15:15.4
+  image: registry.suse.com/suse/sle15:15.5
   failure: ignore
   commands:
     - zypper -n install curl unzip
